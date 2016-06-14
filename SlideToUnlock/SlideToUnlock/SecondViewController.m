@@ -19,8 +19,8 @@
     [super viewDidLoad];
     
     CircularLock *circularLock = [[CircularLock alloc] initWithCenter:self.view.center
-                                                    radius:50
-                                                  duration:1.5
+                                                    radius:80
+                                                  duration:2.0
                                                strokeWidth:15
                                                  ringColor:[UIColor greenColor]
                                                strokeColor:[UIColor whiteColor]
