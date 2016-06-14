@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "CircularLock.h"
 
 @interface SecondViewController ()
 
@@ -16,7 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CircularLock *circularLock = [[CircularLock alloc] initWithCenter:self.view.center
+                                                    radius:50
+                                                  duration:1.5
+                                               strokeWidth:15
+                                                 ringColor:[UIColor greenColor]
+                                               strokeColor:[UIColor whiteColor]
+                                               lockedImage:[UIImage imageNamed:@"lockedTransparent.png"]
+                                             unlockedImage:[UIImage imageNamed:@"unlocked.png"]
+                                                  isLocked:NO
+                                         didlockedCallback:^{
+                                             NSLog(@"locked");
+                                         }
+                                       didUnlockedCallback:^{
+                                           NSLog(@"unlocked");
+                                       }];
+    
+    [self.view addSubview:circularLock];
+
 }
 
 - (void)didReceiveMemoryWarning {

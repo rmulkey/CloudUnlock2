@@ -19,6 +19,7 @@
 		0D7AAFC41D0A1E990085709B /* clay_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFC01D0A1E990085709B /* clay_logo.png */; };
 		0D7AAFC51D0A1E990085709B /* slide-to-unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFC11D0A1E990085709B /* slide-to-unlock.png */; };
 		0D7AAFC61D0A1E990085709B /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFC21D0A1E990085709B /* unnamed.png */; };
+		0D7AAFCA1D1060690085709B /* CircularLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7AAFC91D1060690085709B /* CircularLock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0D7AAFC01D0A1E990085709B /* clay_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clay_logo.png; path = Resources/clay_logo.png; sourceTree = "<group>"; };
 		0D7AAFC11D0A1E990085709B /* slide-to-unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slide-to-unlock.png"; path = "Resources/slide-to-unlock.png"; sourceTree = "<group>"; };
 		0D7AAFC21D0A1E990085709B /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unnamed.png; path = Resources/unnamed.png; sourceTree = "<group>"; };
+		0D7AAFC81D1060690085709B /* CircularLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularLock.h; sourceTree = "<group>"; };
+		0D7AAFC91D1060690085709B /* CircularLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 				0D7AAFA51D0A1D2B0085709B /* Assets.xcassets */,
 				0D7AAFA71D0A1D2B0085709B /* LaunchScreen.storyboard */,
 				0D7AAFAA1D0A1D2B0085709B /* Info.plist */,
+				0D7AAFC71D1060690085709B /* Libs */,
 				0D7AAFBE1D0A1E870085709B /* Resources */,
 				0D7AAF961D0A1D2B0085709B /* Supporting Files */,
 			);
@@ -134,6 +138,15 @@
 				0D7AAFC21D0A1E990085709B /* unnamed.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		0D7AAFC71D1060690085709B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				0D7AAFC81D1060690085709B /* CircularLock.h */,
+				0D7AAFC91D1060690085709B /* CircularLock.m */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7AAFA11D0A1D2B0085709B /* SecondViewController.m in Sources */,
+				0D7AAFCA1D1060690085709B /* CircularLock.m in Sources */,
 				0D7AAF9B1D0A1D2B0085709B /* AppDelegate.m in Sources */,
 				0D7AAF9E1D0A1D2B0085709B /* FirstViewController.m in Sources */,
 				0D7AAF981D0A1D2B0085709B /* main.m in Sources */,
@@ -430,6 +444,7 @@
 				0D7AAFBA1D0A1D2B0085709B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D7AAFBB1D0A1D2B0085709B /* Build configuration list for PBXNativeTarget "SlideToUnlockTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +453,7 @@
 				0D7AAFBD1D0A1D2B0085709B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
