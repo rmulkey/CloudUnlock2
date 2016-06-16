@@ -23,6 +23,8 @@
 		0D7AAFCE1D10616E0085709B /* locked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFCB1D10616E0085709B /* locked@2x.png */; };
 		0D7AAFCF1D10616E0085709B /* lockedTransparent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFCC1D10616E0085709B /* lockedTransparent@2x.png */; };
 		0D7AAFD01D10616E0085709B /* unlocked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFCD1D10616E0085709B /* unlocked@2x.png */; };
+		0D7AAFD21D12A26F0085709B /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFD11D12A26E0085709B /* background1.jpg */; };
+		0D7AAFD41D12A51C0085709B /* my-clay-art-work.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFD31D12A51C0085709B /* my-clay-art-work.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		0D7AAFCB1D10616E0085709B /* locked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locked@2x.png"; path = "Resources/locked@2x.png"; sourceTree = "<group>"; };
 		0D7AAFCC1D10616E0085709B /* lockedTransparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lockedTransparent@2x.png"; path = "Resources/lockedTransparent@2x.png"; sourceTree = "<group>"; };
 		0D7AAFCD1D10616E0085709B /* unlocked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlocked@2x.png"; path = "Resources/unlocked@2x.png"; sourceTree = "<group>"; };
+		0D7AAFD11D12A26E0085709B /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background1.jpg; path = Resources/background1.jpg; sourceTree = "<group>"; };
+		0D7AAFD31D12A51C0085709B /* my-clay-art-work.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "my-clay-art-work.jpg"; path = "Resources/my-clay-art-work.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 		0D7AAFBE1D0A1E870085709B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0D7AAFD31D12A51C0085709B /* my-clay-art-work.jpg */,
+				0D7AAFD11D12A26E0085709B /* background1.jpg */,
 				0D7AAFCB1D10616E0085709B /* locked@2x.png */,
 				0D7AAFCC1D10616E0085709B /* lockedTransparent@2x.png */,
 				0D7AAFCD1D10616E0085709B /* unlocked@2x.png */,
@@ -239,11 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7AAFC61D0A1E990085709B /* unnamed.png in Resources */,
+				0D7AAFD21D12A26F0085709B /* background1.jpg in Resources */,
 				0D7AAFD01D10616E0085709B /* unlocked@2x.png in Resources */,
 				0D7AAFC41D0A1E990085709B /* clay_logo.png in Resources */,
 				0D7AAFCF1D10616E0085709B /* lockedTransparent@2x.png in Resources */,
 				0D7AAFA91D0A1D2B0085709B /* LaunchScreen.storyboard in Resources */,
 				0D7AAFC31D0A1E990085709B /* background.jpg in Resources */,
+				0D7AAFD41D12A51C0085709B /* my-clay-art-work.jpg in Resources */,
 				0D7AAFCE1D10616E0085709B /* locked@2x.png in Resources */,
 				0D7AAFA61D0A1D2B0085709B /* Assets.xcassets in Resources */,
 				0D7AAFC51D0A1E990085709B /* slide-to-unlock.png in Resources */,
