@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Unr-tw-7ai">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -9,7 +8,7 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="PermissionsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -48,7 +47,7 @@
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="UnlockViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -60,7 +59,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-ii-peF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Unlock" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6YH-e3-kt1">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Select Door" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6YH-e3-kt1">
                                 <rect key="frame" x="245" y="36" width="111" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -70,13 +69,23 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nAv-UL-CGf">
+                                <rect key="frame" x="254" y="86" width="93" height="29"/>
+                                <segments>
+                                    <segment title="Front"/>
+                                    <segment title="Back"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Z7k-ii-peF" secondAttribute="bottom" id="0cC-7w-ef7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z7k-ii-peF" secondAttribute="trailing" constant="-20" id="8lO-9p-wz5"/>
                             <constraint firstItem="Z7k-ii-peF" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="AZW-4x-reB"/>
+                            <constraint firstItem="nAv-UL-CGf" firstAttribute="centerX" secondItem="6YH-e3-kt1" secondAttribute="centerX" id="Hcx-DE-AtC"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="6YH-e3-kt1" secondAttribute="bottom" constant="473" id="IzU-lr-rCb"/>
+                            <constraint firstItem="nAv-UL-CGf" firstAttribute="top" secondItem="6YH-e3-kt1" secondAttribute="bottom" constant="8" id="SJ3-iC-GwI"/>
                             <constraint firstItem="Z7k-ii-peF" firstAttribute="centerX" secondItem="6YH-e3-kt1" secondAttribute="centerX" id="ULT-Sq-l1i"/>
                             <constraint firstItem="Z7k-ii-peF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="u88-I6-Dh9"/>
                             <constraint firstItem="6YH-e3-kt1" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="16" id="zsk-C9-7BT"/>

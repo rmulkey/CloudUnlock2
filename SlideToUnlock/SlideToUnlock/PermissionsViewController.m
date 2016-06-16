@@ -6,13 +6,13 @@
 //  Copyright © 2016 Mulkey, Rodrigo S. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "PermissionsViewController.h"
 
-@interface FirstViewController ()
+@interface PermissionsViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation PermissionsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

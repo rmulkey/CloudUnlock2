@@ -6,14 +6,14 @@
 //  Copyright © 2016 Mulkey, Rodrigo S. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "UnlockViewController.h"
 #import "CircularLock.h"
 
-@interface SecondViewController ()
+@interface UnlockViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation UnlockViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

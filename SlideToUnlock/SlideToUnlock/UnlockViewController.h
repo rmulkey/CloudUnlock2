@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SecondViewController.h
 //  SlideToUnlock
 //
 //  Created by Mulkey, Rodrigo S. on 6/9/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface UnlockViewController : UIViewController
 
 
 @end
