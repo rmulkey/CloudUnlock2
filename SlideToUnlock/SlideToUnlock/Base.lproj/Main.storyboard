@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="17M-YO-2Qk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="17M-YO-2Qk">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Permissions" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
@@ -57,18 +57,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Unlock Screen" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="182" y="28" width="235" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-ii-peF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Unlock" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6YH-e3-kt1">
+                                <rect key="frame" x="245" y="36" width="111" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="fov-xv-Lf8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" constant="251" id="qzY-Ky-pLD"/>
+                            <constraint firstAttribute="bottom" secondItem="Z7k-ii-peF" secondAttribute="bottom" id="0cC-7w-ef7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z7k-ii-peF" secondAttribute="trailing" constant="-20" id="8lO-9p-wz5"/>
+                            <constraint firstItem="Z7k-ii-peF" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="AZW-4x-reB"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="6YH-e3-kt1" secondAttribute="bottom" constant="473" id="IzU-lr-rCb"/>
+                            <constraint firstItem="Z7k-ii-peF" firstAttribute="centerX" secondItem="6YH-e3-kt1" secondAttribute="centerX" id="ULT-Sq-l1i"/>
+                            <constraint firstItem="Z7k-ii-peF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="u88-I6-Dh9"/>
+                            <constraint firstItem="6YH-e3-kt1" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="16" id="zsk-C9-7BT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
@@ -95,20 +106,17 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUd-bo-0cm">
                                 <rect key="frame" x="153" y="224" width="294" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="Hnn-rs-9dv"/>
                                     <constraint firstAttribute="width" constant="200" id="qF9-zH-CnL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="Hnn-rs-9dv"/>
                                         <exclude reference="qF9-zH-CnL"/>
                                     </mask>
                                 </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-Op-b5g">
-                                <rect key="frame" x="153" y="285" width="294" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-3U-tQK">
                                 <rect key="frame" x="60" y="288" width="74" height="20.5"/>
@@ -142,14 +150,30 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="7ML-1f-mvq"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="my-clay-art-work.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-2E-3wj">
-                                <rect key="frame" x="260" y="500" width="80" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="my-clay-art-work.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-2E-3wj">
+                                <rect key="frame" x="260" y="536" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="4UG-ap-efG"/>
                                     <constraint firstAttribute="height" constant="80" id="edD-nC-m75"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-Op-b5g">
+                                <rect key="frame" x="153" y="285" width="294" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="sJI-zP-B6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sJI-zP-B6o"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -209,7 +233,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background.jpg" width="736" height="1377"/>
         <image name="background1.jpg" width="600" height="800"/>
         <image name="first" width="30" height="30"/>
         <image name="my-clay-art-work.jpg" width="358" height="358"/>
