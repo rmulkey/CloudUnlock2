@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Unr-tw-7ai">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Permissions-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="PermissionsViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" userLabel="Permissions" customClass="PermissionsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -38,16 +39,16 @@
                             <constraint firstItem="17M-YO-2Qk" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="yFu-iz-qwL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Unlock-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="UnlockViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="Unlock" customClass="UnlockViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -91,11 +92,40 @@
                             <constraint firstItem="6YH-e3-kt1" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="16" id="zsk-C9-7BT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Iha-wn-1Kc">
+            <objects>
+                <viewController id="ZYI-hs-Ogl" userLabel="History" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RSi-lJ-5Z1"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYx-WT-J7V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VMB-Oe-6Oh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="background1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uRt-PC-9sT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uRt-PC-9sT" firstAttribute="leading" secondItem="VMB-Oe-6Oh" secondAttribute="leadingMargin" constant="-20" id="I5e-uq-g72"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uRt-PC-9sT" secondAttribute="trailing" constant="-20" id="iMV-EQ-wnZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="YGS-DO-qVl"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wGR-iK-cdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="1075"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="n6C-Pj-6bl">
@@ -234,6 +264,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="ZYI-hs-Ogl" kind="relationship" relationship="viewControllers" id="gMQ-oy-2Er"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -243,8 +274,6 @@
     </scenes>
     <resources>
         <image name="background1.jpg" width="600" height="800"/>
-        <image name="first" width="30" height="30"/>
         <image name="my-clay-art-work.jpg" width="358" height="358"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>
