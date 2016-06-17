@@ -24,6 +24,8 @@
 		0D7AAFD01D10616E0085709B /* unlocked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFCD1D10616E0085709B /* unlocked@2x.png */; };
 		0D7AAFD21D12A26F0085709B /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFD11D12A26E0085709B /* background1.jpg */; };
 		0D7AAFD41D12A51C0085709B /* my-clay-art-work.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFD31D12A51C0085709B /* my-clay-art-work.jpg */; };
+		0DEF20771D13E2C000035BB1 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF20761D13E2C000035BB1 /* HistoryViewController.m */; };
+		0DEF207A1D13E40600035BB1 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF20791D13E40600035BB1 /* HistoryTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		0D7AAFCD1D10616E0085709B /* unlocked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlocked@2x.png"; path = "Resources/unlocked@2x.png"; sourceTree = "<group>"; };
 		0D7AAFD11D12A26E0085709B /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background1.jpg; path = Resources/background1.jpg; sourceTree = "<group>"; };
 		0D7AAFD31D12A51C0085709B /* my-clay-art-work.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "my-clay-art-work.jpg"; path = "Resources/my-clay-art-work.jpg"; sourceTree = "<group>"; };
+		0DEF20751D13E2C000035BB1 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		0DEF20761D13E2C000035BB1 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		0DEF20781D13E40600035BB1 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		0DEF20791D13E40600035BB1 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 			children = (
 				0D7AAF991D0A1D2B0085709B /* AppDelegate.h */,
 				0D7AAF9A1D0A1D2B0085709B /* AppDelegate.m */,
+				0DEF20751D13E2C000035BB1 /* HistoryViewController.h */,
+				0DEF20761D13E2C000035BB1 /* HistoryViewController.m */,
+				0DEF20781D13E40600035BB1 /* HistoryTableViewCell.h */,
+				0DEF20791D13E40600035BB1 /* HistoryTableViewCell.m */,
 				0D7AAF9C1D0A1D2B0085709B /* PermissionsViewController.h */,
 				0D7AAF9D1D0A1D2B0085709B /* PermissionsViewController.m */,
 				0D7AAF9F1D0A1D2B0085709B /* UnlockViewController.h */,
@@ -265,7 +275,9 @@
 				0D7AAFCA1D1060690085709B /* CircularLock.m in Sources */,
 				0D7AAF9B1D0A1D2B0085709B /* AppDelegate.m in Sources */,
 				0D7AAF9E1D0A1D2B0085709B /* PermissionsViewController.m in Sources */,
+				0DEF207A1D13E40600035BB1 /* HistoryTableViewCell.m in Sources */,
 				0D7AAF981D0A1D2B0085709B /* main.m in Sources */,
+				0DEF20771D13E2C000035BB1 /* HistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
