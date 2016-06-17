@@ -102,7 +102,7 @@
         <!--History-->
         <scene sceneID="Iha-wn-1Kc">
             <objects>
-                <viewController id="ZYI-hs-Ogl" userLabel="History" sceneMemberID="viewController">
+                <viewController id="ZYI-hs-Ogl" userLabel="History" customClass="HistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RSi-lJ-5Z1"/>
                         <viewControllerLayoutGuide type="bottom" id="yYx-WT-J7V"/>
@@ -115,10 +115,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-87-v0f">
-                                <rect key="frame" x="0.0" y="80" width="600" height="471"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zTk-UL-81O" customClass="HistoryTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" id="zTk-UL-81O" customClass="HistoryTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zTk-UL-81O" id="1Yh-dO-l5e">
@@ -210,18 +210,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uRt-PC-9sT" firstAttribute="bottom" secondItem="yYx-WT-J7V" secondAttribute="top" id="6mY-5z-HS3"/>
-                            <constraint firstItem="uRt-PC-9sT" firstAttribute="trailing" secondItem="dDg-87-v0f" secondAttribute="trailing" id="B1l-gP-sB9"/>
-                            <constraint firstItem="dDg-87-v0f" firstAttribute="top" secondItem="RSi-lJ-5Z1" secondAttribute="bottom" constant="60" id="F7G-ty-Ehk"/>
-                            <constraint firstItem="uRt-PC-9sT" firstAttribute="leading" secondItem="VMB-Oe-6Oh" secondAttribute="leadingMargin" constant="-20" id="I5e-uq-g72"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uRt-PC-9sT" secondAttribute="trailing" constant="-20" id="iMV-EQ-wnZ"/>
-                            <constraint firstItem="uRt-PC-9sT" firstAttribute="bottom" secondItem="dDg-87-v0f" secondAttribute="bottom" id="lyb-mm-kdd"/>
-                            <constraint firstItem="uRt-PC-9sT" firstAttribute="top" secondItem="VMB-Oe-6Oh" secondAttribute="top" id="oyL-TF-Dl0"/>
-                            <constraint firstItem="uRt-PC-9sT" firstAttribute="leading" secondItem="dDg-87-v0f" secondAttribute="leading" id="u6t-dX-sls"/>
+                            <constraint firstItem="uRt-PC-9sT" firstAttribute="top" secondItem="VMB-Oe-6Oh" secondAttribute="top" id="3Lx-Pg-bF0"/>
+                            <constraint firstItem="dDg-87-v0f" firstAttribute="bottom" secondItem="yYx-WT-J7V" secondAttribute="top" id="BJc-Rd-FRj"/>
+                            <constraint firstItem="dDg-87-v0f" firstAttribute="top" secondItem="uRt-PC-9sT" secondAttribute="top" id="Hq7-1g-1Uk"/>
+                            <constraint firstItem="uRt-PC-9sT" firstAttribute="leading" secondItem="VMB-Oe-6Oh" secondAttribute="leading" id="JeJ-ae-rni"/>
+                            <constraint firstItem="uRt-PC-9sT" firstAttribute="trailing" secondItem="dDg-87-v0f" secondAttribute="trailing" id="KeJ-qP-XCt"/>
+                            <constraint firstItem="uRt-PC-9sT" firstAttribute="bottom" secondItem="yYx-WT-J7V" secondAttribute="top" id="f3d-p6-1rx"/>
+                            <constraint firstItem="uRt-PC-9sT" firstAttribute="leading" secondItem="dDg-87-v0f" secondAttribute="leading" id="sgB-D9-XgX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="YGS-DO-qVl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="historyTableView" destination="dDg-87-v0f" id="fgJ-me-4F4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGR-iK-cdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
