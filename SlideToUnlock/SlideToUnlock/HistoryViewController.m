@@ -54,6 +54,27 @@
     return 80.0f;
 }
 
+// Adding a tableView Header
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 55.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 25, 420, 20)];
+    
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [label.font fontWithSize:15];
+    label.text = @"History";
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    UIView *sectionHeader = [[UIView alloc] init];
+    sectionHeader.backgroundColor = [UIColor whiteColor];
+    [sectionHeader addSubview:label];
+    
+    return sectionHeader;
+    
+}
 
 @end
