@@ -26,15 +26,49 @@
                                                strokeColor:[UIColor whiteColor]
                                                lockedImage:[UIImage imageNamed:@"lockedTransparent.png"]
                                              unlockedImage:[UIImage imageNamed:@"unlocked.png"]
-                                                  isLocked:NO
+                                                  isLocked:YES
                                          didlockedCallback:^{
                                              NSLog(@"locked");
                                          }
                                        didUnlockedCallback:^{
                                            NSLog(@"unlocked");
+                                           [self verifyPermissions];
                                        }];
     
     [self.view addSubview:circularLock];
+
+}
+- (void) verifyPermissions {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Access Denied"
+                                                                             message:@"You don't have permission to unlock this door. Contact the Admin"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction *action) {}];
+    
+    [alertController addAction:defaultAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    self.username = @"test";
+    self.isAccessDenied = YES;
+    self.eventDate = [NSDate date];
+    
+    [self logUnlockEventToHistory];
+
+}
+
+- (void) logUnlockEventToHistory {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:self.username forKey:@"username"];
+    [defaults setObject:self.eventDate forKey:@"date"];
+    [defaults setInteger:self.isAccessDenied forKey:@"access"];
+    
+    [defaults synchronize];
+    
+    NSLog(@"Defaults: %@", [defaults objectForKey:@"username"]);
 
 }
 

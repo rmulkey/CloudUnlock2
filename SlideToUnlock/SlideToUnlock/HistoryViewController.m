@@ -25,6 +25,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [self fetchUnlockEvents];
+}
+
+- (void) fetchUnlockEvents {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    //[self.historyList arrayWithObjects:[defaults objectForKey:@"username"], [defaults objectForKey:@"yourAnotherUserDefaultsEntryName"], nil];
+
+}
+
 #pragma mark - TableView Delegates
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

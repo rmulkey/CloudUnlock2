@@ -26,6 +26,7 @@
 		0D7AAFD41D12A51C0085709B /* my-clay-art-work.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7AAFD31D12A51C0085709B /* my-clay-art-work.jpg */; };
 		0DEF20771D13E2C000035BB1 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF20761D13E2C000035BB1 /* HistoryViewController.m */; };
 		0DEF207A1D13E40600035BB1 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF20791D13E40600035BB1 /* HistoryTableViewCell.m */; };
+		0DEF207C1D13ED4E00035BB1 /* unlockEventsHistory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DEF207B1D13ED4E00035BB1 /* unlockEventsHistory.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		0DEF20761D13E2C000035BB1 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		0DEF20781D13E40600035BB1 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
 		0DEF20791D13E40600035BB1 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		0DEF207B1D13ED4E00035BB1 /* unlockEventsHistory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = unlockEventsHistory.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,8 @@
 		0D7AAF951D0A1D2B0085709B /* CloudUnlock */ = {
 			isa = PBXGroup;
 			children = (
-				0D7AAF991D0A1D2B0085709B /* AppDelegate.h */,
-				0D7AAF9A1D0A1D2B0085709B /* AppDelegate.m */,
+				0DEF207E1D13ED6300035BB1 /* Views */,
+				0DEF207D1D13ED5600035BB1 /* Model */,
 				0DEF20751D13E2C000035BB1 /* HistoryViewController.h */,
 				0DEF20761D13E2C000035BB1 /* HistoryViewController.m */,
 				0DEF20781D13E40600035BB1 /* HistoryTableViewCell.h */,
@@ -117,9 +119,7 @@
 				0D7AAF9D1D0A1D2B0085709B /* PermissionsViewController.m */,
 				0D7AAF9F1D0A1D2B0085709B /* UnlockViewController.h */,
 				0D7AAFA01D0A1D2B0085709B /* UnlockViewController.m */,
-				0D7AAFA21D0A1D2B0085709B /* Main.storyboard */,
 				0D7AAFA51D0A1D2B0085709B /* Assets.xcassets */,
-				0D7AAFA71D0A1D2B0085709B /* LaunchScreen.storyboard */,
 				0D7AAFAA1D0A1D2B0085709B /* Info.plist */,
 				0D7AAFC71D1060690085709B /* Libs */,
 				0D7AAFBE1D0A1E870085709B /* Resources */,
@@ -132,6 +132,8 @@
 		0D7AAF961D0A1D2B0085709B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D7AAF991D0A1D2B0085709B /* AppDelegate.h */,
+				0D7AAF9A1D0A1D2B0085709B /* AppDelegate.m */,
 				0D7AAF971D0A1D2B0085709B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -160,6 +162,23 @@
 				0D7AAFC91D1060690085709B /* CircularLock.m */,
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		0DEF207D1D13ED5600035BB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0DEF207B1D13ED4E00035BB1 /* unlockEventsHistory.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0DEF207E1D13ED6300035BB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D7AAFA21D0A1D2B0085709B /* Main.storyboard */,
+				0D7AAFA71D0A1D2B0085709B /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +273,7 @@
 				0D7AAFA61D0A1D2B0085709B /* Assets.xcassets in Resources */,
 				0D7AAFC51D0A1E990085709B /* slide-to-unlock.png in Resources */,
 				0D7AAFA41D0A1D2B0085709B /* Main.storyboard in Resources */,
+				0DEF207C1D13ED4E00035BB1 /* unlockEventsHistory.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

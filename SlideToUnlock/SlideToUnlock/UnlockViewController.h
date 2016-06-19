@@ -10,6 +10,11 @@
 
 @interface UnlockViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableArray *event;
+
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSDate *eventDate;
+@property (nonatomic, assign) BOOL isAccessDenied;
 
 @end
 
